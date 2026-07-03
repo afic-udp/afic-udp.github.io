@@ -1,0 +1,15 @@
+{
+  "id": "sistemas-distribuidos",
+  "name": "Sistemas Distribuidos",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "informatica"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 7
+  },
+  "materials": []
+}

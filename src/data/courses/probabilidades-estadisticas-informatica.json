@@ -1,0 +1,16 @@
+{
+  "id": "probabilidades-estadisticas-informatica",
+  "name": "Probabilidades y Estadísticas",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "estadistica-pendiente"
+  ],
+  "status": "pending-confirmation",
+  "semesters": {
+    "informatica": 4
+  },
+  "relationId": "probabilidades-estadisticas",
+  "materials": []
+}

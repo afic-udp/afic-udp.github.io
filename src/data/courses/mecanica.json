@@ -1,0 +1,19 @@
+{
+  "id": "mecanica",
+  "name": "Mecánica",
+  "careers": [
+    "industrial",
+    "informatica",
+    "obras-civiles"
+  ],
+  "areas": [
+    "fisica"
+  ],
+  "status": "shared-confirmed",
+  "semesters": {
+    "industrial": 2,
+    "informatica": 2,
+    "obras-civiles": 2
+  },
+  "materials": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ecuaciones-diferenciales",
+  "name": "Ecuaciones Diferenciales",
+  "careers": [
+    "industrial",
+    "informatica",
+    "obras-civiles"
+  ],
+  "areas": [
+    "matematica"
+  ],
+  "status": "shared-confirmed",
+  "semesters": {
+    "industrial": 3,
+    "informatica": 3,
+    "obras-civiles": 3
+  },
+  "materials": []
+}

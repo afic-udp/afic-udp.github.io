@@ -1,0 +1,17 @@
+[
+  {
+    "id": "industrial",
+    "name": "Ingeniería Civil Industrial",
+    "shortName": "Industrial"
+  },
+  {
+    "id": "informatica",
+    "name": "Ingeniería Civil en Informática y Telecomunicaciones",
+    "shortName": "Informática y Telecom"
+  },
+  {
+    "id": "obras-civiles",
+    "name": "Ingeniería Civil en Obras Civiles",
+    "shortName": "Obras Civiles"
+  }
+]

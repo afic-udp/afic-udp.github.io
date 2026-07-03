@@ -1,0 +1,16 @@
+{
+  "id": "microeconomia",
+  "name": "Microeconomía",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "economia-gestion",
+    "industrial"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "industrial": 6
+  },
+  "materials": []
+}

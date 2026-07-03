@@ -1,0 +1,15 @@
+{
+  "id": "ingenieria-materiales",
+  "name": "Ingeniería de Materiales",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "obras-civiles"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 2
+  },
+  "materials": []
+}

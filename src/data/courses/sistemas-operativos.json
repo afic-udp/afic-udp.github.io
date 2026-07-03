@@ -1,0 +1,15 @@
+{
+  "id": "sistemas-operativos",
+  "name": "Sistemas Operativos",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "informatica"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 6
+  },
+  "materials": []
+}

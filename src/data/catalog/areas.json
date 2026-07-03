@@ -1,0 +1,66 @@
+[
+  {
+    "id": "matematica",
+    "name": "Matemática"
+  },
+  {
+    "id": "fisica",
+    "name": "Física"
+  },
+  {
+    "id": "quimica",
+    "name": "Química"
+  },
+  {
+    "id": "programacion",
+    "name": "Programación"
+  },
+  {
+    "id": "datos",
+    "name": "Datos"
+  },
+  {
+    "id": "economia-gestion",
+    "name": "Economía y Gestión"
+  },
+  {
+    "id": "industrial",
+    "name": "Industrial"
+  },
+  {
+    "id": "informatica",
+    "name": "Informática"
+  },
+  {
+    "id": "telecomunicaciones",
+    "name": "Telecomunicaciones"
+  },
+  {
+    "id": "tics-integracion",
+    "name": "Proyectos TICs e Integración"
+  },
+  {
+    "id": "obras-civiles",
+    "name": "Obras Civiles"
+  },
+  {
+    "id": "estructuras",
+    "name": "Estructuras"
+  },
+  {
+    "id": "hidraulica-ambiental",
+    "name": "Hidráulica y Ambiental"
+  },
+  {
+    "id": "construccion-gestion",
+    "name": "Construcción y Gestión"
+  },
+  {
+    "id": "estadistica-pendiente",
+    "name": "Estadística por Confirmar"
+  },
+  {
+    "id": "por-clasificar",
+    "name": "Por Clasificar"
+  }
+]

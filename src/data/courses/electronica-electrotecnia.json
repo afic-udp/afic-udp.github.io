@@ -1,0 +1,15 @@
+{
+  "id": "electronica-electrotecnia",
+  "name": "Electrónica y Electrotecnia",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "por-clasificar"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 4
+  },
+  "materials": []
+}

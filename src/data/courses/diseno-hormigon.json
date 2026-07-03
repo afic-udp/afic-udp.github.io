@@ -1,0 +1,15 @@
+{
+  "id": "diseno-hormigon",
+  "name": "Diseño en Hormigón",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "estructuras"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 7
+  },
+  "materials": []
+}

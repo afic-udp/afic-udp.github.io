@@ -1,0 +1,19 @@
+{
+  "id": "programacion",
+  "name": "Programación",
+  "careers": [
+    "industrial",
+    "informatica",
+    "obras-civiles"
+  ],
+  "areas": [
+    "programacion"
+  ],
+  "status": "shared-confirmed",
+  "semesters": {
+    "industrial": 1,
+    "informatica": 1,
+    "obras-civiles": 1
+  },
+  "materials": []
+}

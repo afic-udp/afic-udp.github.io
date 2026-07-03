@@ -1,0 +1,18 @@
+{
+  "id": "mecanica-fluidos-industrial",
+  "name": "Mecánica de Fluidos",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "fisica",
+    "industrial"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "industrial": 5
+  },
+  "relationId": "mecanica-fluidos",
+  "variant": "industrial",
+  "materials": []
+}

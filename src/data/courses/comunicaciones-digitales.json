@@ -1,0 +1,15 @@
+{
+  "id": "comunicaciones-digitales",
+  "name": "Comunicaciones Digitales",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "telecomunicaciones"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 7
+  },
+  "materials": []
+}

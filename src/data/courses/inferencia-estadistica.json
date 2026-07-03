@@ -1,0 +1,16 @@
+{
+  "id": "inferencia-estadistica",
+  "name": "Inferencia Estadística",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "estadistica-pendiente",
+    "industrial"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "industrial": 5
+  },
+  "materials": []
+}

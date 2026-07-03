@@ -1,0 +1,15 @@
+{
+  "id": "ingenieria-ambiental",
+  "name": "Ingeniería Ambiental",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "hidraulica-ambiental"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 6
+  },
+  "materials": []
+}

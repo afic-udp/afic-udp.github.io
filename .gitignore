@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+tempFiles/
+docs/
+*.md
+
+.DS_Store
+npm-debug.log*

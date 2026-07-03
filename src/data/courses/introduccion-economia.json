@@ -1,0 +1,19 @@
+{
+  "id": "introduccion-economia",
+  "name": "Introducción a la Economía",
+  "careers": [
+    "industrial",
+    "informatica",
+    "obras-civiles"
+  ],
+  "areas": [
+    "economia-gestion"
+  ],
+  "status": "shared-confirmed",
+  "semesters": {
+    "industrial": 4,
+    "informatica": 8,
+    "obras-civiles": 6
+  },
+  "materials": []
+}

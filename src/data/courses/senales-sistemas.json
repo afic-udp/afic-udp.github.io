@@ -1,0 +1,15 @@
+{
+  "id": "senales-sistemas",
+  "name": "Señales y Sistemas",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "telecomunicaciones"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 6
+  },
+  "materials": []
+}

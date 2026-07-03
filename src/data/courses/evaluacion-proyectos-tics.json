@@ -1,0 +1,15 @@
+{
+  "id": "evaluacion-proyectos-tics",
+  "name": "Evaluación de Proyectos TICs",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "tics-integracion"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 8
+  },
+  "materials": []
+}

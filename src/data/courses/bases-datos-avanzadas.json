@@ -1,0 +1,16 @@
+{
+  "id": "bases-datos-avanzadas",
+  "name": "Bases de Datos Avanzadas",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "datos",
+    "informatica"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 5
+  },
+  "materials": []
+}

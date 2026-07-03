@@ -1,0 +1,16 @@
+{
+  "id": "teoria-organizacional",
+  "name": "Teoría Organizacional",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "economia-gestion",
+    "industrial"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "industrial": 5
+  },
+  "materials": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "arquitectura-software",
+  "name": "Arquitectura de Software",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "informatica"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 9
+  },
+  "materials": []
+}

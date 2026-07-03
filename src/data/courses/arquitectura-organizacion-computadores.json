@@ -1,0 +1,15 @@
+{
+  "id": "arquitectura-organizacion-computadores",
+  "name": "Arquitectura y Organización de Computadores",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "por-clasificar"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 6
+  },
+  "materials": []
+}

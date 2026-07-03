@@ -1,0 +1,16 @@
+{
+  "id": "criptografia-seguridad-redes",
+  "name": "Criptografía y Seguridad en Redes",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "telecomunicaciones",
+    "informatica"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 8
+  },
+  "materials": []
+}

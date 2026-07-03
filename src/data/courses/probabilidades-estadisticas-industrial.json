@@ -1,0 +1,16 @@
+{
+  "id": "probabilidades-estadisticas-industrial",
+  "name": "Probabilidades y Estadísticas",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "estadistica-pendiente"
+  ],
+  "status": "pending-confirmation",
+  "semesters": {
+    "industrial": 4
+  },
+  "relationId": "probabilidades-estadisticas",
+  "materials": []
+}

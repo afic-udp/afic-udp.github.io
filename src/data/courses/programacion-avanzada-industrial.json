@@ -1,0 +1,18 @@
+{
+  "id": "programacion-avanzada-industrial",
+  "name": "Programación Avanzada",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "programacion",
+    "industrial"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "industrial": 2
+  },
+  "relationId": "programacion-avanzada",
+  "variant": "industrial",
+  "materials": []
+}

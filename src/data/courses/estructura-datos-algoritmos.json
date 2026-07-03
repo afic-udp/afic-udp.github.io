@@ -1,0 +1,16 @@
+{
+  "id": "estructura-datos-algoritmos",
+  "name": "Estructura de Datos y Algoritmos",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "informatica",
+    "programacion"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 3
+  },
+  "materials": []
+}

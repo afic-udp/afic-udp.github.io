@@ -1,0 +1,28 @@
+---
+import catalog from "../data/catalog.js";
+import materialesScriptUrl from "../scripts/materiales.js?url";
+import SiteHeader from "./SiteHeader.astro";
+
+const catalogJson = JSON.stringify(catalog);
+---
+
+<SiteHeader current="materiales" />
+
+<main class="directory-shell">
+  <section class="directory-toolbar" aria-label="Controles del directorio">
+    <div class="breadcrumb" id="breadcrumb"></div>
+    <label class="search-box">
+      <span>buscar</span>
+      <input id="searchInput" type="search" autocomplete="off" spellcheck="false" />
+    </label>
+  </section>
+
+  <section class="tree-stage" aria-label="Directorio de materiales">
+    <div class="tree" id="tree"></div>
+  </section>
+
+  <section class="course-panel" id="coursePanel" aria-live="polite"></section>
+</main>
+
+<script type="application/json" id="catalog-data" set:html={catalogJson}></script>
+<script type="module" src={materialesScriptUrl}></script>

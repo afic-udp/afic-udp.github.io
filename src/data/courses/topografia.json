@@ -1,0 +1,15 @@
+{
+  "id": "topografia",
+  "name": "Topografía",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "obras-civiles"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 5
+  },
+  "materials": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "contabilidad-costos",
+  "name": "Contabilidad y Costos",
+  "careers": [
+    "industrial",
+    "informatica"
+  ],
+  "areas": [
+    "economia-gestion"
+  ],
+  "status": "two-career-confirmed",
+  "semesters": {
+    "industrial": 3,
+    "informatica": 6
+  },
+  "materials": []
+}

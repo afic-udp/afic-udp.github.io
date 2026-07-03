@@ -1,0 +1,19 @@
+{
+  "id": "calculo-2",
+  "name": "Cálculo II",
+  "careers": [
+    "industrial",
+    "informatica",
+    "obras-civiles"
+  ],
+  "areas": [
+    "matematica"
+  ],
+  "status": "shared-confirmed",
+  "semesters": {
+    "industrial": 2,
+    "informatica": 2,
+    "obras-civiles": 2
+  },
+  "materials": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "bases-datos-industrial",
+  "name": "Bases de Datos",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "datos",
+    "industrial"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "industrial": 6
+  },
+  "relationId": "bases-datos",
+  "variant": "industrial",
+  "materials": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "edificacion",
+  "name": "Edificación",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "construccion-gestion",
+    "obras-civiles"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 4
+  },
+  "materials": []
+}

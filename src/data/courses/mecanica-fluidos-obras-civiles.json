@@ -1,0 +1,17 @@
+{
+  "id": "mecanica-fluidos-obras-civiles",
+  "name": "Mecánica de Fluidos",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "hidraulica-ambiental"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "obras-civiles": 4
+  },
+  "relationId": "mecanica-fluidos",
+  "variant": "obras-civiles",
+  "materials": []
+}

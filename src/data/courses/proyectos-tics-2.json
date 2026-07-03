@@ -1,0 +1,15 @@
+{
+  "id": "proyectos-tics-2",
+  "name": "Proyectos en TICs II",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "tics-integracion"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 10
+  },
+  "materials": []
+}

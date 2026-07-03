@@ -1,0 +1,26 @@
+---
+interface Props {
+  current?: "quienes-somos" | "apoyanos" | "contacto" | "materiales";
+}
+
+const { current } = Astro.props;
+
+const links = [
+  { id: "quienes-somos", label: "Quiénes somos", href: "../quienes-somos/" },
+  { id: "apoyanos", label: "Apóyanos", href: "../apoyanos/" },
+  { id: "contacto", label: "Contacto", href: "../contacto/" }
+];
+---
+
+<header class="site-header">
+  <a href="../" class="header-title">AYUDANTÍAS <span class="header-sub">FIC</span></a>
+  <nav class="header-nav" aria-label="Navegación principal">
+    {links.map((link) => (
+      <a href={link.href} class:list={["header-link", { active: current === link.id }]}>
+        {link.label}
+      </a>
+    ))}
+    {current !== "materiales" && <a href="../materiales/" class="header-link">Materiales</a>}
+    <a href="../" class="back-link">volver</a>
+  </nav>
+</header>

@@ -1,0 +1,15 @@
+{
+  "id": "logistica",
+  "name": "Logística",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "industrial"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "industrial": 8
+  },
+  "materials": []
+}

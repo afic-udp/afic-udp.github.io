@@ -1,0 +1,16 @@
+{
+  "id": "liderazgo-emprendimiento",
+  "name": "Liderazgo y Emprendimiento",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "economia-gestion",
+    "industrial"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "industrial": 9
+  },
+  "materials": []
+}

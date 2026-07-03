@@ -1,0 +1,15 @@
+{
+  "id": "redes-datos",
+  "name": "Redes de Datos",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "telecomunicaciones"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 3
+  },
+  "materials": []
+}

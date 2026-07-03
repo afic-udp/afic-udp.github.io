@@ -1,0 +1,18 @@
+{
+  "id": "bases-datos-informatica",
+  "name": "Bases de Datos",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "datos",
+    "informatica"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "informatica": 4
+  },
+  "relationId": "bases-datos",
+  "variant": "informatica",
+  "materials": []
+}

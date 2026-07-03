@@ -1,0 +1,15 @@
+{
+  "id": "taller-redes-servicios",
+  "name": "Taller de Redes y Servicios",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "telecomunicaciones"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 5
+  },
+  "materials": []
+}

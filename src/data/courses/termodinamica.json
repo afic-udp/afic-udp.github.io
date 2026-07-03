@@ -1,0 +1,16 @@
+{
+  "id": "termodinamica",
+  "name": "Termodinámica",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "fisica",
+    "industrial"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "industrial": 6
+  },
+  "materials": []
+}

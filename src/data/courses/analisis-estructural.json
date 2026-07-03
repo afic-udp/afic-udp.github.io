@@ -1,0 +1,15 @@
+{
+  "id": "analisis-estructural",
+  "name": "Análisis Estructural",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "estructuras"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 5
+  },
+  "materials": []
+}

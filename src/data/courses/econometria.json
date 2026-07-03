@@ -1,0 +1,16 @@
+{
+  "id": "econometria",
+  "name": "Econometría",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "economia-gestion",
+    "industrial"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "industrial": 7
+  },
+  "materials": []
+}

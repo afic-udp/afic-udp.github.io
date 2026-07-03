@@ -1,0 +1,18 @@
+{
+  "id": "estatica-industrial",
+  "name": "Estática",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "fisica",
+    "industrial"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "industrial": 4
+  },
+  "relationId": "estatica",
+  "variant": "industrial",
+  "materials": []
+}

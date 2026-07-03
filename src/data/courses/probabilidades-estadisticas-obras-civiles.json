@@ -1,0 +1,16 @@
+{
+  "id": "probabilidades-estadisticas-obras-civiles",
+  "name": "Probabilidades y Estadísticas",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "estadistica-pendiente"
+  ],
+  "status": "pending-confirmation",
+  "semesters": {
+    "obras-civiles": 4
+  },
+  "relationId": "probabilidades-estadisticas",
+  "materials": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "desarrollo-web-movil",
+  "name": "Desarrollo Web y Móvil",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "informatica"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 4
+  },
+  "materials": []
+}

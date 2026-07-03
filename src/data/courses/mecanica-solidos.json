@@ -1,0 +1,16 @@
+{
+  "id": "mecanica-solidos",
+  "name": "Mecánica de Sólidos",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "estructuras",
+    "fisica"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 4
+  },
+  "materials": []
+}

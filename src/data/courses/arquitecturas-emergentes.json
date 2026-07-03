@@ -1,0 +1,15 @@
+{
+  "id": "arquitecturas-emergentes",
+  "name": "Arquitecturas Emergentes",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "por-clasificar"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 9
+  },
+  "materials": []
+}

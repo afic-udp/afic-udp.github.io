@@ -1,0 +1,16 @@
+{
+  "id": "administracion-proyectos-civiles",
+  "name": "Administración de Proyectos Civiles",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "construccion-gestion",
+    "obras-civiles"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 7
+  },
+  "materials": []
+}

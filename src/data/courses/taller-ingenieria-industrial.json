@@ -1,0 +1,15 @@
+{
+  "id": "taller-ingenieria-industrial",
+  "name": "Taller de Ingeniería Industrial",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "industrial"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "industrial": 10
+  },
+  "materials": []
+}

@@ -1,0 +1,24 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  bodyId?: string;
+}
+
+const { title, bodyId = "" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Materiales de ayudantías para cursos de la Facultad de Ingeniería y Ciencias." />
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/iosevka/index.css" />
+  </head>
+  <body id={bodyId}>
+    <slot />
+  </body>
+</html>

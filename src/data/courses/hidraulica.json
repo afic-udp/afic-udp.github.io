@@ -1,0 +1,15 @@
+{
+  "id": "hidraulica",
+  "name": "Hidráulica",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "hidraulica-ambiental"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 5
+  },
+  "materials": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "programacion-avanzada-informatica",
+  "name": "Programación Avanzada",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "programacion",
+    "informatica"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "informatica": 2
+  },
+  "relationId": "programacion-avanzada",
+  "variant": "informatica",
+  "materials": []
+}

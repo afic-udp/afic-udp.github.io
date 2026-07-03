@@ -1,0 +1,16 @@
+{
+  "id": "modelos-estocasticos",
+  "name": "Modelos Estocásticos",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "matematica",
+    "industrial"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "industrial": 6
+  },
+  "materials": []
+}

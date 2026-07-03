@@ -1,0 +1,18 @@
+{
+  "id": "data-science-informatica",
+  "name": "Data Science",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "datos",
+    "informatica"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "informatica": 9
+  },
+  "relationId": "data-science",
+  "variant": "informatica",
+  "materials": []
+}

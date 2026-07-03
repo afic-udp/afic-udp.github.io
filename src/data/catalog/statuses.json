@@ -1,0 +1,22 @@
+[
+  {
+    "id": "shared-confirmed",
+    "name": "Compartido confirmado"
+  },
+  {
+    "id": "two-career-confirmed",
+    "name": "Compartido por dos carreras"
+  },
+  {
+    "id": "pending-confirmation",
+    "name": "Por confirmar"
+  },
+  {
+    "id": "same-name-different-course",
+    "name": "Mismo nombre, distinto curso"
+  },
+  {
+    "id": "career-specific",
+    "name": "Propio de carrera"
+  }
+]

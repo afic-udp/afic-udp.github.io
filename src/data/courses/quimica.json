@@ -1,0 +1,19 @@
+{
+  "id": "quimica",
+  "name": "Química",
+  "careers": [
+    "industrial",
+    "informatica",
+    "obras-civiles"
+  ],
+  "areas": [
+    "quimica"
+  ],
+  "status": "shared-confirmed",
+  "semesters": {
+    "industrial": 1,
+    "informatica": 1,
+    "obras-civiles": 1
+  },
+  "materials": []
+}

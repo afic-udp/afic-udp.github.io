@@ -1,0 +1,19 @@
+{
+  "id": "optimizacion",
+  "name": "Optimización",
+  "careers": [
+    "industrial",
+    "informatica",
+    "obras-civiles"
+  ],
+  "areas": [
+    "matematica"
+  ],
+  "status": "shared-confirmed",
+  "semesters": {
+    "industrial": 5,
+    "informatica": 5,
+    "obras-civiles": 5
+  },
+  "materials": []
+}

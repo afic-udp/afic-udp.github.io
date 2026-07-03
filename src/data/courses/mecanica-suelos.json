@@ -1,0 +1,16 @@
+{
+  "id": "mecanica-suelos",
+  "name": "Mecánica de Suelos",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "estructuras",
+    "obras-civiles"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "obras-civiles": 7
+  },
+  "materials": []
+}

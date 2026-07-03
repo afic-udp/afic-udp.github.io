@@ -1,0 +1,18 @@
+{
+  "id": "data-science-industrial",
+  "name": "Data Science",
+  "careers": [
+    "industrial"
+  ],
+  "areas": [
+    "datos",
+    "industrial"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "industrial": 8
+  },
+  "relationId": "data-science",
+  "variant": "industrial",
+  "materials": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "tecnologias-inalambricas",
+  "name": "Tecnologías Inalámbricas",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "telecomunicaciones"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 8
+  },
+  "materials": []
+}

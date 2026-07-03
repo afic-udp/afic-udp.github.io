@@ -1,0 +1,18 @@
+{
+  "id": "estatica-obras-civiles",
+  "name": "Estática",
+  "careers": [
+    "obras-civiles"
+  ],
+  "areas": [
+    "fisica",
+    "estructuras"
+  ],
+  "status": "same-name-different-course",
+  "semesters": {
+    "obras-civiles": 3
+  },
+  "relationId": "estatica",
+  "variant": "obras-civiles",
+  "materials": []
+}

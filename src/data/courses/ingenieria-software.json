@@ -1,0 +1,15 @@
+{
+  "id": "ingenieria-software",
+  "name": "Ingeniería de Software",
+  "careers": [
+    "informatica"
+  ],
+  "areas": [
+    "informatica"
+  ],
+  "status": "career-specific",
+  "semesters": {
+    "informatica": 7
+  },
+  "materials": []
+}
