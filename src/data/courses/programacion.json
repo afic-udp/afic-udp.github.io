@@ -15,5 +15,16 @@
     "informatica": 1,
     "obras-civiles": 1
   },
-  "materials": []
+  "materials": [
+  {
+    "id": "guia-1-2026-1",
+    "title": "Guía 1",
+    "period": "2026-1",
+    "type": "guia",
+    "kind": "enunciado",
+    "sequence": 1,
+    "version": 1,
+    "path": "/files/courses/programacion/2026-1/guias/CIT1000_2026_1_programacion_guia_1.pdf"
+  }
+]
 }
