@@ -98,17 +98,3 @@ Ejemplo para `src/data/courses/programacion.json`:
   "path": "/files/courses/programacion/2026-1/guias/CIT1100_2026_1_programacion_guia_1.pdf"
 }
 ```
-
-## Antes de abrir PR
-
-Validar rutas, nombres y JSON:
-
-```bash
-npm run validate
-```
-
-Validar y construir el sitio:
-
-```bash
-npm run check
-```
