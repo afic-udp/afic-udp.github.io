@@ -2,7 +2,7 @@
 
 Usar esta tabla para saber qué código, ID, carpeta y JSON corresponden a cada ramo.
 
-Para el nombre del archivo, usar el valor de la columna `ID` como `NOMBRECURSO`, según la regla de [NAMING.md](./NAMING.md).
+Para el nombre del archivo, usar el valor de la columna `ID` como `NOMBRECURSO`, según la regla de [NAMING.md](/docs/NAMING.md).
 
 Códigos confirmados: 34. Códigos pendientes: 53.
 

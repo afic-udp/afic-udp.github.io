@@ -24,13 +24,13 @@ CIT1100_2026_1_programacion_control_2_venegas.pdf
 
 ## Partes del nombre
 
-`CODIGOCURSO`: código oficial del ramo. Usar exactamente el código listado en [COURSES.md](./COURSES.md).
+`CODIGOCURSO`: código oficial del ramo. Usar exactamente el código listado en [COURSES.md](/docs/COURSES.md).
 
 `AÑO`: año con cuatro dígitos.
 
 `SEMESTRE`: `1`, `2` o `verano`.
 
-`NOMBRECURSO`: nombre corto del curso en el sitio. Usar el ID listado en [COURSES.md](./COURSES.md).
+`NOMBRECURSO`: nombre corto del curso en el sitio. Usar el ID listado en [COURSES.md](/docs/COURSES.md).
 
 `TIPO`: tipo de material. Debe ser uno de los valores de la tabla siguiente.
 

@@ -14,7 +14,7 @@ git switch -c carga-materiales-tanto-tanto
 
 ## 2. Buscar el curso
 
-Revisar [COURSES.md](./COURSES.md) y ubicar:
+Revisar [COURSES.md](/docs/COURSES.md) y ubicar:
 
 - el ID del curso;
 - el código oficial;
@@ -29,7 +29,7 @@ Programación | programacion | CIT1100
 
 ## 3. Nombrar el archivo
 
-Usar la regla de [NAMING.md](./NAMING.md).
+Usar la regla de [NAMING.md](/docs/NAMING.md).
 
 Ejemplo:
 
@@ -55,7 +55,7 @@ public/files/courses/programacion/2026-1/guias/CIT1100_2026_1_programacion_guia_
 
 ## 5. Editar el JSON del curso
 
-Abrir el JSON indicado en [COURSES.md](./COURSES.md).
+Abrir el JSON indicado en [COURSES.md](/docs/COURSES.md).
 
 Ejemplo:
 
@@ -112,7 +112,7 @@ Antes de pedir merge, revisar que:
 
 - el check de github pase;
 - el material esté en el curso correcto;
-- el nombre del archivo siga [NAMING.md](./NAMING.md);
+- el nombre del archivo siga [NAMING.md](/docs/NAMING.md);
 - el JSON apunte al archivo correcto.
 
 ## 9. Review y merge
