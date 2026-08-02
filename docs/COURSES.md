@@ -11,12 +11,12 @@ Códigos confirmados: 34. Códigos pendientes: 53.
 | Administración de Proyectos Civiles | administracion-proyectos-civiles | pendiente | `public/files/courses/administracion-proyectos-civiles/` | `src/data/courses/administracion-proyectos-civiles.json` |
 | Álgebra y Geometría | algebra-geometria | CBM1100 | `public/files/courses/algebra-geometria/` | `src/data/courses/algebra-geometria.json` |
 | Álgebra Lineal | algebra-lineal | CBM1102 | `public/files/courses/algebra-lineal/` | `src/data/courses/algebra-lineal.json` |
-| Análisis Estructural | analisis-estructural | pendiente | `public/files/courses/analisis-estructural/` | `src/data/courses/analisis-estructural.json` |
+| Análisis Estructural | analisis-estructural | COC2102 | `public/files/courses/analisis-estructural/` | `src/data/courses/analisis-estructural.json` |
 | Arquitectura y Organización de Computadores | arquitectura-organizacion-computadores | CIT2109 | `public/files/courses/arquitectura-organizacion-computadores/` | `src/data/courses/arquitectura-organizacion-computadores.json` |
 | Arquitectura de Software | arquitectura-software | CIT3000 | `public/files/courses/arquitectura-software/` | `src/data/courses/arquitectura-software.json` |
-| Arquitecturas Emergentes | arquitecturas-emergentes | pendiente | `public/files/courses/arquitecturas-emergentes/` | `src/data/courses/arquitecturas-emergentes.json` |
+| Arquitecturas Emergentes | arquitecturas-emergentes | CIT3100 | `public/files/courses/arquitecturas-emergentes/` | `src/data/courses/arquitecturas-emergentes.json` |
 | Bases de Datos Avanzadas | bases-datos-avanzadas | CIT2009 | `public/files/courses/bases-datos-avanzadas/` | `src/data/courses/bases-datos-avanzadas.json` |
-| Bases de Datos | bases-datos-industrial | pendiente | `public/files/courses/bases-datos-industrial/` | `src/data/courses/bases-datos-industrial.json` |
+| Bases de Datos | bases-datos-industrial | CII2501 | `public/files/courses/bases-datos-industrial/` | `src/data/courses/bases-datos-industrial.json` |
 | Bases de Datos | bases-datos-informatica | CIT2007 | `public/files/courses/bases-datos-informatica/` | `src/data/courses/bases-datos-informatica.json` |
 | BIM | bim | pendiente | `public/files/courses/bim/` | `src/data/courses/bim.json` |
 | Cálculo I | calculo-1 | CBM1101 | `public/files/courses/calculo-1/` | `src/data/courses/calculo-1.json` |
@@ -26,7 +26,7 @@ Códigos confirmados: 34. Códigos pendientes: 53.
 | Comunicaciones Digitales | comunicaciones-digitales | CIT2111 | `public/files/courses/comunicaciones-digitales/` | `src/data/courses/comunicaciones-digitales.json` |
 | Contabilidad y Costos | contabilidad-costos | CII1000 | `public/files/courses/contabilidad-costos/` | `src/data/courses/contabilidad-costos.json` |
 | Criptografía y Seguridad en Redes | criptografia-seguridad-redes | CIT2113 | `public/files/courses/criptografia-seguridad-redes/` | `src/data/courses/criptografia-seguridad-redes.json` |
-| Data Science | data-science-industrial | pendiente | `public/files/courses/data-science-industrial/` | `src/data/courses/data-science-industrial.json` |
+| Data Science | data-science-industrial | CII2504 | `public/files/courses/data-science-industrial/` | `src/data/courses/data-science-industrial.json` |
 | Data Science | data-science-informatica | CIT3202 | `public/files/courses/data-science-informatica/` | `src/data/courses/data-science-informatica.json` |
 | Desarrollo Web y Móvil | desarrollo-web-movil | CIT2008 | `public/files/courses/desarrollo-web-movil/` | `src/data/courses/desarrollo-web-movil.json` |
 | Diseño en Acero | diseno-acero | pendiente | `public/files/courses/diseno-acero/` | `src/data/courses/diseno-acero.json` |
@@ -70,9 +70,9 @@ Códigos confirmados: 34. Códigos pendientes: 53.
 | Modelos Estocásticos | modelos-estocasticos | pendiente | `public/files/courses/modelos-estocasticos/` | `src/data/courses/modelos-estocasticos.json` |
 | Optimización | optimizacion | CII2750 | `public/files/courses/optimizacion/` | `src/data/courses/optimizacion.json` |
 | Planificación de Proyectos | planificacion-proyectos | pendiente | `public/files/courses/planificacion-proyectos/` | `src/data/courses/planificacion-proyectos.json` |
-| Probabilidades y Estadísticas | probabilidades-estadisticas-industrial | pendiente | `public/files/courses/probabilidades-estadisticas-industrial/` | `src/data/courses/probabilidades-estadisticas-industrial.json` |
+| Probabilidades y Estadísticas | probabilidades-estadisticas-industrial | CBE2000 | `public/files/courses/probabilidades-estadisticas-industrial/` | `src/data/courses/probabilidades-estadisticas-industrial.json` |
 | Probabilidades y Estadísticas | probabilidades-estadisticas-informatica | CIT2204 | `public/files/courses/probabilidades-estadisticas-informatica/` | `src/data/courses/probabilidades-estadisticas-informatica.json` |
-| Probabilidades y Estadísticas | probabilidades-estadisticas-obras-civiles | pendiente | `public/files/courses/probabilidades-estadisticas-obras-civiles/` | `src/data/courses/probabilidades-estadisticas-obras-civiles.json` |
+| Probabilidades y Estadísticas | probabilidades-estadisticas-obras-civiles | CBE2000 | `public/files/courses/probabilidades-estadisticas-obras-civiles/` | `src/data/courses/probabilidades-estadisticas-obras-civiles.json` |
 | Producción | produccion | pendiente | `public/files/courses/produccion/` | `src/data/courses/produccion.json` |
 | Programación Avanzada | programacion-avanzada-industrial | pendiente | `public/files/courses/programacion-avanzada-industrial/` | `src/data/courses/programacion-avanzada-industrial.json` |
 | Programación Avanzada | programacion-avanzada-informatica | CIT1110 | `public/files/courses/programacion-avanzada-informatica/` | `src/data/courses/programacion-avanzada-informatica.json` |
