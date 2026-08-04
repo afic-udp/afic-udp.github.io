@@ -24,7 +24,7 @@ Revisar [COURSES.md](/docs/COURSES.md) y ubicar:
 Ejemplo:
 
 ```text
-Programación | programacion | CIT1100
+Programación | programacion | CIT1000
 ```
 
 ## 3. Nombrar el archivo
@@ -34,7 +34,7 @@ Usar la regla de [NAMING.md](/docs/NAMING.md).
 Ejemplo:
 
 ```text
-CIT1100_2026_1_programacion_guia_1.pdf
+CIT1000_2026_1_programacion_guia_1.pdf
 ```
 
 ## 4. Poner el archivo en su carpeta
@@ -50,7 +50,7 @@ public/files/courses/programacion/2026-1/guias/
 El archivo quedaría así:
 
 ```text
-public/files/courses/programacion/2026-1/guias/CIT1100_2026_1_programacion_guia_1.pdf
+public/files/courses/programacion/2026-1/guias/CIT1000_2026_1_programacion_guia_1.pdf
 ```
 
 ## 5. Editar el JSON del curso
@@ -74,7 +74,7 @@ Agregar el material dentro de `materials`:
   "kind": "enunciado",
   "sequence": 1,
   "version": 1,
-  "path": "/files/courses/programacion/2026-1/guias/CIT1100_2026_1_programacion_guia_1.pdf"
+  "path": "/files/courses/programacion/2026-1/guias/CIT1000_2026_1_programacion_guia_1.pdf"
 }
 ```
 
