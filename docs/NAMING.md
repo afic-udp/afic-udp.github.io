@@ -11,15 +11,15 @@ CODIGOCURSO_AÑO_SEMESTRE_NOMBRECURSO_TIPO_NUMERO[_PROFESOR].ext
 Ejemplo:
 
 ```text
-CIT1100_2026_1_programacion_guia_1.pdf
+CIT1000_2026_1_programacion_guia_1.pdf
 ```
 
 Si hay más de un material del mismo tipo y número para el mismo curso, se puede agregar el apellido del profesor al final:
 
 ```text
-CIT1100_2026_1_programacion_control_2_frez1.pdf
-CIT1100_2026_1_programacion_control_2_frez2.pdf
-CIT1100_2026_1_programacion_control_2_venegas.pdf
+CIT1000_2026_1_programacion_control_2_frez1.pdf
+CIT1000_2026_1_programacion_control_2_frez2.pdf
+CIT1000_2026_1_programacion_control_2_venegas.pdf
 ```
 
 ## Partes del nombre
@@ -73,13 +73,13 @@ public/files/courses/NOMBRECURSO/AÑO-SEMESTRE/CARPETA/CODIGOCURSO_AÑO_SEMESTRE
 Ejemplo:
 
 ```text
-public/files/courses/programacion/2026-1/guias/CIT1100_2026_1_programacion_guia_1.pdf
+public/files/courses/programacion/2026-1/guias/CIT1000_2026_1_programacion_guia_1.pdf
 ```
 
 En el JSON, la ruta va sin `public`:
 
 ```text
-/files/courses/programacion/2026-1/guias/CIT1100_2026_1_programacion_guia_1.pdf
+/files/courses/programacion/2026-1/guias/CIT1000_2026_1_programacion_guia_1.pdf
 ```
 
 ## Entrada en el JSON
@@ -95,6 +95,6 @@ Ejemplo para `src/data/courses/programacion.json`:
   "kind": "enunciado",
   "sequence": 1,
   "version": 1,
-  "path": "/files/courses/programacion/2026-1/guias/CIT1100_2026_1_programacion_guia_1.pdf"
+  "path": "/files/courses/programacion/2026-1/guias/CIT1000_2026_1_programacion_guia_1.pdf"
 }
 ```
