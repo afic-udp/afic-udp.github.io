@@ -4,7 +4,7 @@ Usar esta tabla para saber qué código, ID, carpeta y JSON corresponden a cada 
 
 Para el nombre del archivo, usar el valor de la columna `ID` como `NOMBRECURSO`, según la regla de [NAMING.md](/docs/NAMING.md).
 
-Códigos confirmados: 86. Códigos pendientes: 1.
+Códigos confirmados: 87. Códigos pendientes: 0.
 
 | Ramo | ID | Código | Carpeta base | JSON |
 | --- | --- | --- | --- | --- |
@@ -74,9 +74,8 @@ Códigos confirmados: 86. Códigos pendientes: 1.
 | Probabilidades y Estadísticas | probabilidades-estadisticas-informatica | CIT2204 | `public/files/courses/probabilidades-estadisticas-informatica/` | `src/data/courses/probabilidades-estadisticas-informatica.json` |
 | Probabilidades y Estadísticas | probabilidades-estadisticas-obras-civiles | CBE2000 | `public/files/courses/probabilidades-estadisticas-obras-civiles/` | `src/data/courses/probabilidades-estadisticas-obras-civiles.json` |
 | Producción | produccion | CII2253 | `public/files/courses/produccion/` | `src/data/courses/produccion.json` |
-| Programación Avanzada | programacion-avanzada-industrial | pendiente | `public/files/courses/programacion-avanzada-industrial/` | `src/data/courses/programacion-avanzada-industrial.json` |
-| Programación Avanzada | programacion-avanzada-informatica | CIT1110 | `public/files/courses/programacion-avanzada-informatica/` | `src/data/courses/programacion-avanzada-informatica.json` |
-| Programación | programacion | CIT1100 | `public/files/courses/programacion/` | `src/data/courses/programacion.json` |
+| Programación Avanzada | programacion-avanzada | CIT1010 | `public/files/courses/programacion-avanzada/` | `src/data/courses/programacion-avanzada.json` |
+| Programación | programacion | CIT1000 | `public/files/courses/programacion/` | `src/data/courses/programacion.json` |
 | Proyectos Energéticos | proyectos-energeticos | CII2403 | `public/files/courses/proyectos-energeticos/` | `src/data/courses/proyectos-energeticos.json` |
 | Proyectos en TICs I | proyectos-tics-1 | CIT2205 | `public/files/courses/proyectos-tics-1/` | `src/data/courses/proyectos-tics-1.json` |
 | Proyectos en TICs II | proyectos-tics-2 | CIT3203 | `public/files/courses/proyectos-tics-2/` | `src/data/courses/proyectos-tics-2.json` |
