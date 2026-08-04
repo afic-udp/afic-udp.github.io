@@ -11,5 +11,16 @@
   "semesters": {
     "informatica": 6
   },
-  "materials": []
+  "materials": [
+	{
+	"id": "prueba-2-2026-1",
+	"title": "Solemne 2",
+	"period": "2026-1",
+	"type": "prueba",
+	"kind": "enunciado",
+	"sequence": 2,
+	"version": 1,
+	"path": "/files/courses/senales-sistemas/2026-1/pruebas/CIT2110_2026_1_senales-sistemas_prueba_2.pdf"
+	}
+	]
 }
