@@ -1,0 +1,18 @@
+{
+  "id": "programacion-avanzada-cpp",
+  "name": "Programación Avanzada (C++)",
+  "careers": [
+    "industrial",
+    "informatica"
+  ],
+  "areas": [
+    "programacion"
+  ],
+  "status": "two-career-confirmed",
+  "semesters": {
+    "industrial": 2,
+    "informatica": 2
+  },
+  "relationId": "programacion-avanzada",
+  "materials": []
+}
