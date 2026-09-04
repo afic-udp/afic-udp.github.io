@@ -1,6 +1,6 @@
 {
-  "id": "programacion-avanzada-informatica",
-  "name": "Programación Avanzada",
+  "id": "programacion-avanzada-java",
+  "name": "Programación Avanzada (Java)",
   "careers": [
     "informatica"
   ],
@@ -8,11 +8,10 @@
     "programacion",
     "informatica"
   ],
-  "status": "same-name-different-course",
+  "status": "career-specific",
   "semesters": {
     "informatica": 2
   },
   "relationId": "programacion-avanzada",
-  "variant": "informatica",
   "materials": []
 }
