@@ -11,5 +11,16 @@
   "semesters": {
     "informatica": 8
   },
-  "materials": []
+  "materials": [
+    {
+      "id": "guia-1-2026-2",
+      "title": "Guía 1",
+      "period": "2026-1",
+      "type": "guia",
+      "kind": "enunciado",
+      "sequence": 1,
+      "version": 1,
+      "path": "/files/courses/inteligencia-artificial/2026-2/guias/CIT2013_2026_2_inteligencia-artificial_guia_1.pdf"
+    }
+  ]
 }
