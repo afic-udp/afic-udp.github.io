@@ -226,8 +226,89 @@ function buildView(nextState) {
   return buildView({ kind: "root" });
 }
 
-function setState(nextState) {
+function stateToHash(nextState) {
+  switch (nextState.kind) {
+    case "careers":
+      return "#carreras";
+    case "career":
+      return `#carreras/${nextState.careerId}`;
+    case "career-semester":
+      return `#carreras/${nextState.careerId}/${nextState.semester}`;
+    case "areas":
+      return "#areas";
+    case "area":
+      return `#areas/${nextState.areaId}`;
+    case "courses":
+      return "#cursos";
+    case "course":
+      return `#${nextState.courseId}`;
+    case "search":
+      return `#buscar/${encodeURIComponent(nextState.query)}`;
+    default:
+      return "";
+  }
+}
+
+function decodeSegment(segment) {
+  try {
+    return decodeURIComponent(segment);
+  } catch {
+    return "";
+  }
+}
+
+function hashToState(hash) {
+  const [section, id, semester] = hash.replace(/^#/, "").split("/").map(decodeSegment);
+
+  if (section === "carreras") {
+    if (!id) {
+      return { kind: "careers" };
+    }
+    if (!careerById.has(id)) {
+      return { kind: "root" };
+    }
+    if (getCareerSemesters(id).includes(Number(semester))) {
+      return { kind: "career-semester", careerId: id, semester: Number(semester) };
+    }
+    return { kind: "career", careerId: id };
+  }
+
+  if (section === "areas") {
+    if (!id) {
+      return { kind: "areas" };
+    }
+    return areaById.has(id) ? { kind: "area", areaId: id } : { kind: "root" };
+  }
+
+  if (section === "cursos") {
+    return { kind: "courses" };
+  }
+
+  if (section === "buscar" && id) {
+    return { kind: "search", query: id };
+  }
+
+  if (courseById.has(section)) {
+    return { kind: "course", courseId: section };
+  }
+
+  return { kind: "root" };
+}
+
+function setState(nextState, { replace = false } = {}) {
   state = nextState;
+  const url = `${location.pathname}${location.search}${stateToHash(nextState)}`;
+  if (replace || url === `${location.pathname}${location.search}${location.hash}`) {
+    history.replaceState(null, "", url);
+  } else {
+    history.pushState(null, "", url);
+  }
+  render();
+}
+
+function loadStateFromUrl() {
+  state = hashToState(location.hash);
+  searchInput.value = state.kind === "search" ? state.query : "";
   render();
 }
 
@@ -509,13 +590,15 @@ function render() {
 
 searchInput.addEventListener("input", () => {
   const query = searchInput.value.trim();
+  const replace = state.kind === "search";
   if (query.length === 0) {
-    setState({ kind: "root" });
+    setState({ kind: "root" }, { replace });
     return;
   }
-  setState({ kind: "search", query });
+  setState({ kind: "search", query }, { replace });
 });
 
 window.addEventListener("resize", () => render());
+window.addEventListener("popstate", loadStateFromUrl);
 
-render();
+loadStateFromUrl();
