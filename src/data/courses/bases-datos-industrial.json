@@ -1,6 +1,7 @@
 {
   "id": "bases-datos-industrial",
-  "name": "Bases de Datos",
+  "name": "Bases de Datos (Industrial)",
+  "code": "CII2501",
   "careers": [
     "industrial"
   ],

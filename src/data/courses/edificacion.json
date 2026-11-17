@@ -1,6 +1,7 @@
 {
   "id": "edificacion",
   "name": "Edificación",
+  "code": "COC2202",
   "careers": [
     "obras-civiles"
   ],

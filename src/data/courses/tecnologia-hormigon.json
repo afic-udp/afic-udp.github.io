@@ -1,6 +1,7 @@
 {
   "id": "tecnologia-hormigon",
   "name": "Tecnología del Hormigón",
+  "code": "COC2003",
   "careers": [
     "obras-civiles"
   ],

@@ -1,6 +1,7 @@
 {
   "id": "estatica-industrial",
-  "name": "Estática",
+  "name": "Estática (Industrial)",
+  "code": "CII2250",
   "careers": [
     "industrial"
   ],

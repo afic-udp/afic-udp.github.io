@@ -226,8 +226,89 @@ function buildView(nextState) {
   return buildView({ kind: "root" });
 }
 
-function setState(nextState) {
+function stateToHash(nextState) {
+  switch (nextState.kind) {
+    case "careers":
+      return "#carreras";
+    case "career":
+      return `#carreras/${nextState.careerId}`;
+    case "career-semester":
+      return `#carreras/${nextState.careerId}/${nextState.semester}`;
+    case "areas":
+      return "#areas";
+    case "area":
+      return `#areas/${nextState.areaId}`;
+    case "courses":
+      return "#cursos";
+    case "course":
+      return `#${nextState.courseId}`;
+    case "search":
+      return `#buscar/${encodeURIComponent(nextState.query)}`;
+    default:
+      return "";
+  }
+}
+
+function decodeSegment(segment) {
+  try {
+    return decodeURIComponent(segment);
+  } catch {
+    return "";
+  }
+}
+
+function hashToState(hash) {
+  const [section, id, semester] = hash.replace(/^#/, "").split("/").map(decodeSegment);
+
+  if (section === "carreras") {
+    if (!id) {
+      return { kind: "careers" };
+    }
+    if (!careerById.has(id)) {
+      return { kind: "root" };
+    }
+    if (getCareerSemesters(id).includes(Number(semester))) {
+      return { kind: "career-semester", careerId: id, semester: Number(semester) };
+    }
+    return { kind: "career", careerId: id };
+  }
+
+  if (section === "areas") {
+    if (!id) {
+      return { kind: "areas" };
+    }
+    return areaById.has(id) ? { kind: "area", areaId: id } : { kind: "root" };
+  }
+
+  if (section === "cursos") {
+    return { kind: "courses" };
+  }
+
+  if (section === "buscar" && id) {
+    return { kind: "search", query: id };
+  }
+
+  if (courseById.has(section)) {
+    return { kind: "course", courseId: section };
+  }
+
+  return { kind: "root" };
+}
+
+function setState(nextState, { replace = false } = {}) {
   state = nextState;
+  const url = `${location.pathname}${location.search}${stateToHash(nextState)}`;
+  if (replace || url === `${location.pathname}${location.search}${location.hash}`) {
+    history.replaceState(null, "", url);
+  } else {
+    history.pushState(null, "", url);
+  }
+  render();
+}
+
+function loadStateFromUrl() {
+  state = hashToState(location.hash);
+  searchInput.value = state.kind === "search" ? state.query : "";
   render();
 }
 
@@ -373,6 +454,48 @@ function renderTree(view) {
   }
 }
 
+const typeLabels = {
+  ayudantia: "Ayudantías",
+  guia: "Guías",
+  control: "Controles",
+  prueba: "Pruebas",
+  examen: "Exámenes",
+  resumen: "Resúmenes",
+  apunte: "Apuntes",
+  tarea: "Tareas",
+  laboratorio: "Laboratorios",
+  codigo: "Código",
+  dataset: "Datasets"
+};
+
+const semesterLabels = {
+  verano: "Verano",
+  1: "Primer semestre",
+  2: "Segundo semestre"
+};
+
+function periodLabel(period) {
+  const [year, semester] = period.split("-");
+  return `${semesterLabels[semester]} ${year}`;
+}
+
+function periodOrder(period) {
+  const [year, semester] = period.split("-");
+  return Number(year) * 10 + (semester === "verano" ? 0 : Number(semester));
+}
+
+function groupBy(items, getKey) {
+  const groups = new Map();
+  items.forEach((item) => {
+    const key = getKey(item);
+    if (!groups.has(key)) {
+      groups.set(key, []);
+    }
+    groups.get(key).push(item);
+  });
+  return [...groups];
+}
+
 function chip(text) {
   const el = document.createElement("span");
   el.className = "meta-chip";
@@ -405,13 +528,31 @@ function renderCoursePanel(course) {
   semesters.className = "course-semesters";
   semesters.textContent = Object.entries(course.semesters)
     .map(([careerId, semester]) => `${careerById.get(careerId).shortName}: semestre ${semester}`)
-    .join(" · ");
+    .join("\n");
   panelEl.append(semesters);
 
-  if (course.relationId) {
+  const related = course.relationId
+    ? sortByName(publishedCourses.filter((other) => other.relationId === course.relationId && other.id !== course.id))
+    : [];
+
+  if (related.length > 0) {
     const relation = document.createElement("p");
     relation.className = "course-relation";
-    relation.textContent = `grupo de comparación: ${course.relationId}`;
+    relation.append("Ver también: ");
+    related.forEach((other, index) => {
+      if (index > 0) {
+        relation.append(", ");
+      }
+      const link = document.createElement("a");
+      link.href = stateToHash({ kind: "course", courseId: other.id });
+      link.textContent = other.name;
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        searchInput.value = "";
+        setState({ kind: "course", courseId: other.id });
+      });
+      relation.append(link);
+    });
     panelEl.append(relation);
   }
 
@@ -427,16 +568,35 @@ function renderCoursePanel(course) {
     return;
   }
 
-  const list = document.createElement("div");
-  list.className = "material-list";
-  course.materials.forEach((material) => {
-    const link = document.createElement("a");
-    link.href = material.path;
-    link.download = "";
-    link.textContent = material.title;
-    list.append(link);
-  });
-  panelEl.append(list);
+  groupBy(course.materials, (material) => material.period)
+    .sort(([a], [b]) => periodOrder(b) - periodOrder(a))
+    .forEach(([period, periodMaterials]) => {
+      const periodTitle = document.createElement("h4");
+      periodTitle.textContent = periodLabel(period);
+      panelEl.append(periodTitle);
+
+      groupBy(periodMaterials, (material) => material.type)
+        .sort(([a], [b]) => catalog.materialTypes.indexOf(a) - catalog.materialTypes.indexOf(b))
+        .forEach(([type, typeMaterials]) => {
+          const typeTitle = document.createElement("h5");
+          typeTitle.textContent = typeLabels[type] || type;
+          panelEl.append(typeTitle);
+
+          const list = document.createElement("div");
+          list.className = "material-list";
+          [...typeMaterials]
+            .sort((a, b) => a.sequence - b.sequence || a.title.localeCompare(b.title, "es"))
+            .forEach((material) => {
+              const link = document.createElement("a");
+              link.href = material.path;
+              link.target = "_blank";
+              link.rel = "noopener";
+              link.textContent = material.title;
+              list.append(link);
+            });
+          panelEl.append(list);
+        });
+    });
 }
 
 function render() {
@@ -448,13 +608,15 @@ function render() {
 
 searchInput.addEventListener("input", () => {
   const query = searchInput.value.trim();
+  const replace = state.kind === "search";
   if (query.length === 0) {
-    setState({ kind: "root" });
+    setState({ kind: "root" }, { replace });
     return;
   }
-  setState({ kind: "search", query });
+  setState({ kind: "search", query }, { replace });
 });
 
 window.addEventListener("resize", () => render());
+window.addEventListener("popstate", loadStateFromUrl);
 
-render();
+loadStateFromUrl();
