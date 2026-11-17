@@ -531,10 +531,28 @@ function renderCoursePanel(course) {
     .join("\n");
   panelEl.append(semesters);
 
-  if (course.relationId) {
+  const related = course.relationId
+    ? sortByName(publishedCourses.filter((other) => other.relationId === course.relationId && other.id !== course.id))
+    : [];
+
+  if (related.length > 0) {
     const relation = document.createElement("p");
     relation.className = "course-relation";
-    relation.textContent = `grupo de comparación: ${course.relationId}`;
+    relation.append("Ver también: ");
+    related.forEach((other, index) => {
+      if (index > 0) {
+        relation.append(", ");
+      }
+      const link = document.createElement("a");
+      link.href = stateToHash({ kind: "course", courseId: other.id });
+      link.textContent = other.name;
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        searchInput.value = "";
+        setState({ kind: "course", courseId: other.id });
+      });
+      relation.append(link);
+    });
     panelEl.append(relation);
   }
 

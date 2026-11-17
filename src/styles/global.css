@@ -736,6 +736,15 @@ body#info {
   margin-top: 1rem;
 }
 
+.course-relation a {
+  color: var(--color-orange);
+  text-decoration: none;
+}
+
+.course-relation a:hover {
+  text-decoration: underline;
+}
+
 .material-list {
   display: grid;
   gap: 1px;
