@@ -373,6 +373,48 @@ function renderTree(view) {
   }
 }
 
+const typeLabels = {
+  ayudantia: "Ayudantías",
+  guia: "Guías",
+  control: "Controles",
+  prueba: "Pruebas",
+  examen: "Exámenes",
+  resumen: "Resúmenes",
+  apunte: "Apuntes",
+  tarea: "Tareas",
+  laboratorio: "Laboratorios",
+  codigo: "Código",
+  dataset: "Datasets"
+};
+
+const semesterLabels = {
+  verano: "Verano",
+  1: "Primer semestre",
+  2: "Segundo semestre"
+};
+
+function periodLabel(period) {
+  const [year, semester] = period.split("-");
+  return `${semesterLabels[semester]} ${year}`;
+}
+
+function periodOrder(period) {
+  const [year, semester] = period.split("-");
+  return Number(year) * 10 + (semester === "verano" ? 0 : Number(semester));
+}
+
+function groupBy(items, getKey) {
+  const groups = new Map();
+  items.forEach((item) => {
+    const key = getKey(item);
+    if (!groups.has(key)) {
+      groups.set(key, []);
+    }
+    groups.get(key).push(item);
+  });
+  return [...groups];
+}
+
 function chip(text) {
   const el = document.createElement("span");
   el.className = "meta-chip";
@@ -405,7 +447,7 @@ function renderCoursePanel(course) {
   semesters.className = "course-semesters";
   semesters.textContent = Object.entries(course.semesters)
     .map(([careerId, semester]) => `${careerById.get(careerId).shortName}: semestre ${semester}`)
-    .join(" · ");
+    .join("\n");
   panelEl.append(semesters);
 
   if (course.relationId) {
@@ -427,16 +469,34 @@ function renderCoursePanel(course) {
     return;
   }
 
-  const list = document.createElement("div");
-  list.className = "material-list";
-  course.materials.forEach((material) => {
-    const link = document.createElement("a");
-    link.href = material.path;
-    link.download = "";
-    link.textContent = material.title;
-    list.append(link);
-  });
-  panelEl.append(list);
+  groupBy(course.materials, (material) => material.period)
+    .sort(([a], [b]) => periodOrder(b) - periodOrder(a))
+    .forEach(([period, periodMaterials]) => {
+      const periodTitle = document.createElement("h4");
+      periodTitle.textContent = periodLabel(period);
+      panelEl.append(periodTitle);
+
+      groupBy(periodMaterials, (material) => material.type)
+        .sort(([a], [b]) => catalog.materialTypes.indexOf(a) - catalog.materialTypes.indexOf(b))
+        .forEach(([type, typeMaterials]) => {
+          const typeTitle = document.createElement("h5");
+          typeTitle.textContent = typeLabels[type] || type;
+          panelEl.append(typeTitle);
+
+          const list = document.createElement("div");
+          list.className = "material-list";
+          [...typeMaterials]
+            .sort((a, b) => a.sequence - b.sequence || a.title.localeCompare(b.title, "es"))
+            .forEach((material) => {
+              const link = document.createElement("a");
+              link.href = material.path;
+              link.download = "";
+              link.textContent = material.title;
+              list.append(link);
+            });
+          panelEl.append(list);
+        });
+    });
 }
 
 function render() {
