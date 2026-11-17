@@ -1,6 +1,7 @@
 {
   "id": "estatica-obras-civiles",
   "name": "Estática (Obras Civiles)",
+  "code": "COC2108",
   "careers": [
     "obras-civiles"
   ],
