@@ -10,6 +10,7 @@ const publicCoursesPath = path.join(root, "public", "files", "courses");
 const errors = [];
 const idPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const periodPattern = /^\d{4}-(1|2|verano)$/;
+const codePattern = /^[A-Z0-9]+(?:-[A-Z0-9]+)*$/;
 const filenamePattern = /^(?<courseCode>[A-Z0-9]+(?:-[A-Z0-9]+)*)_(?<year>\d{4})_(?<semester>1|2|verano)_(?<courseName>[a-z0-9]+(?:-[a-z0-9]+)*)_(?<type>ayudantia|guia|control|prueba|examen|resumen|apunte|tarea|laboratorio|codigo|dataset)_(?<sequence>[1-9]\d?)(?:_(?<professor>[a-z]+(?:-[a-z]+)*\d*))?\.[a-z0-9]+$/;
 const typeDirs = {
   ayudantia: "ayudantias",
@@ -124,6 +125,12 @@ courses.forEach((course) => {
     fail(`courses.${course.id} is missing name`);
   }
 
+  if (!codePattern.test(course.code || "")) {
+    fail(`courses.${course.id} has invalid code`);
+  }
+
+  const materialTitles = new Set();
+
   assertArray(`courses.${course.id}.careers`, course.careers).forEach((careerId) => {
     if (!careerIds.has(careerId)) {
       fail(`courses.${course.id} references unknown career ${careerId}`);
@@ -163,6 +170,12 @@ courses.forEach((course) => {
     if (!material.title || typeof material.title !== "string") {
       fail(`${label} is missing title`);
     }
+
+    const titleKey = `${material.period}/${material.type}/${material.title}`;
+    if (materialTitles.has(titleKey)) {
+      fail(`${label} duplicates title ${material.title} in ${material.period} ${material.type}`);
+    }
+    materialTitles.add(titleKey);
 
     if (!periodPattern.test(material.period || "")) {
       fail(`${label} has invalid period`);
@@ -213,6 +226,14 @@ courses.forEach((course) => {
     } else {
       const filenamePeriod = `${filenameMatch.groups.year}-${filenameMatch.groups.semester}`;
       const filenameSequence = Number(filenameMatch.groups.sequence);
+
+      if (course.code && filenameMatch.groups.courseCode !== course.code) {
+        fail(`${label} filename course code must be ${course.code}`);
+      }
+
+      if (filenameMatch.groups.courseName !== course.id) {
+        fail(`${label} filename course name must be ${course.id}`);
+      }
 
       if (filenamePeriod !== material.period) {
         fail(`${label} filename period must be ${material.period}`);
