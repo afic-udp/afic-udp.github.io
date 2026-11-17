@@ -24,7 +24,7 @@ CIT1100_2026_1_programacion-python_control_2_venegas.pdf
 
 ## Partes del nombre
 
-`CODIGOCURSO`: código oficial del ramo. Usar exactamente el código listado en [COURSES.md](/docs/COURSES.md).
+`CODIGOCURSO`: código oficial del ramo. Usar exactamente el código listado en [COURSES.md](/docs/COURSES.md), que es el mismo campo `code` del JSON del curso.
 
 `AÑO`: año con cuatro dígitos.
 
@@ -98,3 +98,18 @@ Ejemplo para `src/data/courses/programacion-python.json`:
   "path": "/files/courses/programacion-python/2026-1/guias/CIT1100_2026_1_programacion-python_guia_1.pdf"
 }
 ```
+
+## Títulos
+
+En el sitio los materiales se agrupan por periodo y tipo, así que el título no necesita repetir esa información. `Guía 1` basta.
+
+Dentro de un mismo curso, periodo y tipo no puede haber dos títulos iguales. Si hay dos materiales con el mismo número, agregar el profesor entre paréntesis:
+
+```text
+Control 2 (Frez)
+Control 2 (Venegas)
+```
+
+## Correcciones
+
+Si un material se corrige, reemplazar el archivo manteniendo el mismo nombre y subir `version` en el JSON (de `1` a `2`, etc.). No se publican versiones viejas; quedan en el historial de git.
