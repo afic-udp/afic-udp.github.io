@@ -16,8 +16,8 @@ Códigos confirmados: 88. Códigos pendientes: 0.
 | Arquitectura de Software | arquitectura-software | CIT3000 | `public/files/courses/arquitectura-software/` | `src/data/courses/arquitectura-software.json` |
 | Arquitecturas Emergentes | arquitecturas-emergentes | CIT3100 | `public/files/courses/arquitecturas-emergentes/` | `src/data/courses/arquitecturas-emergentes.json` |
 | Bases de Datos Avanzadas | bases-datos-avanzadas | CIT2009 | `public/files/courses/bases-datos-avanzadas/` | `src/data/courses/bases-datos-avanzadas.json` |
-| Bases de Datos | bases-datos-industrial | CII2501 | `public/files/courses/bases-datos-industrial/` | `src/data/courses/bases-datos-industrial.json` |
-| Bases de Datos | bases-datos-informatica | CIT2007 | `public/files/courses/bases-datos-informatica/` | `src/data/courses/bases-datos-informatica.json` |
+| Bases de Datos (Industrial) | bases-datos-industrial | CII2501 | `public/files/courses/bases-datos-industrial/` | `src/data/courses/bases-datos-industrial.json` |
+| Bases de Datos (Informática) | bases-datos-informatica | CIT2007 | `public/files/courses/bases-datos-informatica/` | `src/data/courses/bases-datos-informatica.json` |
 | BIM | bim | COC2009 | `public/files/courses/bim/` | `src/data/courses/bim.json` |
 | Cálculo I | calculo-1 | CBM1101 | `public/files/courses/calculo-1/` | `src/data/courses/calculo-1.json` |
 | Cálculo II | calculo-2 | CBM1103 | `public/files/courses/calculo-2/` | `src/data/courses/calculo-2.json` |
@@ -26,8 +26,8 @@ Códigos confirmados: 88. Códigos pendientes: 0.
 | Comunicaciones Digitales | comunicaciones-digitales | CIT2111 | `public/files/courses/comunicaciones-digitales/` | `src/data/courses/comunicaciones-digitales.json` |
 | Contabilidad y Costos | contabilidad-costos | CII1000 | `public/files/courses/contabilidad-costos/` | `src/data/courses/contabilidad-costos.json` |
 | Criptografía y Seguridad en Redes | criptografia-seguridad-redes | CIT2113 | `public/files/courses/criptografia-seguridad-redes/` | `src/data/courses/criptografia-seguridad-redes.json` |
-| Data Science | data-science-industrial | CII2504 | `public/files/courses/data-science-industrial/` | `src/data/courses/data-science-industrial.json` |
-| Data Science | data-science-informatica | CIT3202 | `public/files/courses/data-science-informatica/` | `src/data/courses/data-science-informatica.json` |
+| Data Science (Industrial) | data-science-industrial | CII2504 | `public/files/courses/data-science-industrial/` | `src/data/courses/data-science-industrial.json` |
+| Data Science (Informática) | data-science-informatica | CIT3202 | `public/files/courses/data-science-informatica/` | `src/data/courses/data-science-informatica.json` |
 | Desarrollo Web y Móvil | desarrollo-web-movil | CIT2008 | `public/files/courses/desarrollo-web-movil/` | `src/data/courses/desarrollo-web-movil.json` |
 | Diseño en Acero | diseno-acero | COC2107 | `public/files/courses/diseno-acero/` | `src/data/courses/diseno-acero.json` |
 | Diseño de Caminos | diseno-caminos | COC3001 | `public/files/courses/diseno-caminos/` | `src/data/courses/diseno-caminos.json` |
@@ -38,8 +38,8 @@ Códigos confirmados: 88. Códigos pendientes: 0.
 | Edificación | edificacion | COC2202 | `public/files/courses/edificacion/` | `src/data/courses/edificacion.json` |
 | Electricidad y Magnetismo | electricidad-magnetismo | CBF1002 | `public/files/courses/electricidad-magnetismo/` | `src/data/courses/electricidad-magnetismo.json` |
 | Electrónica y Electrotecnia | electronica-electrotecnia | CIT2107 | `public/files/courses/electronica-electrotecnia/` | `src/data/courses/electronica-electrotecnia.json` |
-| Estática | estatica-industrial | CII2250 | `public/files/courses/estatica-industrial/` | `src/data/courses/estatica-industrial.json` |
-| Estática | estatica-obras-civiles | COC2108 | `public/files/courses/estatica-obras-civiles/` | `src/data/courses/estatica-obras-civiles.json` |
+| Estática (Industrial) | estatica-industrial | CII2250 | `public/files/courses/estatica-industrial/` | `src/data/courses/estatica-industrial.json` |
+| Estática (Obras Civiles) | estatica-obras-civiles | COC2108 | `public/files/courses/estatica-obras-civiles/` | `src/data/courses/estatica-obras-civiles.json` |
 | Estructura de Datos y Algoritmos | estructura-datos-algoritmos | CIT2006 | `public/files/courses/estructura-datos-algoritmos/` | `src/data/courses/estructura-datos-algoritmos.json` |
 | Evaluación de Proyectos TICs | evaluacion-proyectos-tics | CIT2207 | `public/files/courses/evaluacion-proyectos-tics/` | `src/data/courses/evaluacion-proyectos-tics.json` |
 | Evaluación de Proyectos | evaluacion-proyectos | CII2004 | `public/files/courses/evaluacion-proyectos/` | `src/data/courses/evaluacion-proyectos.json` |
@@ -61,8 +61,8 @@ Códigos confirmados: 88. Códigos pendientes: 0.
 | Liderazgo y Emprendimiento | liderazgo-emprendimiento | CII3101 | `public/files/courses/liderazgo-emprendimiento/` | `src/data/courses/liderazgo-emprendimiento.json` |
 | Logística | logistica | CII2254 | `public/files/courses/logistica/` | `src/data/courses/logistica.json` |
 | Marketing | marketing | CII2102 | `public/files/courses/marketing/` | `src/data/courses/marketing.json` |
-| Mecánica de Fluidos | mecanica-fluidos-industrial | CII2401 | `public/files/courses/mecanica-fluidos-industrial/` | `src/data/courses/mecanica-fluidos-industrial.json` |
-| Mecánica de Fluidos | mecanica-fluidos-obras-civiles | COC2206 | `public/files/courses/mecanica-fluidos-obras-civiles/` | `src/data/courses/mecanica-fluidos-obras-civiles.json` |
+| Mecánica de Fluidos (Industrial) | mecanica-fluidos-industrial | CII2401 | `public/files/courses/mecanica-fluidos-industrial/` | `src/data/courses/mecanica-fluidos-industrial.json` |
+| Mecánica de Fluidos (Obras Civiles) | mecanica-fluidos-obras-civiles | COC2206 | `public/files/courses/mecanica-fluidos-obras-civiles/` | `src/data/courses/mecanica-fluidos-obras-civiles.json` |
 | Mecánica de Sólidos | mecanica-solidos | COC2109 | `public/files/courses/mecanica-solidos/` | `src/data/courses/mecanica-solidos.json` |
 | Mecánica de Suelos | mecanica-suelos | COC2104 | `public/files/courses/mecanica-suelos/` | `src/data/courses/mecanica-suelos.json` |
 | Mecánica | mecanica | CBF1100 | `public/files/courses/mecanica/` | `src/data/courses/mecanica.json` |
@@ -70,9 +70,9 @@ Códigos confirmados: 88. Códigos pendientes: 0.
 | Modelos Estocásticos | modelos-estocasticos | CII2755 | `public/files/courses/modelos-estocasticos/` | `src/data/courses/modelos-estocasticos.json` |
 | Optimización | optimizacion | CII2750 | `public/files/courses/optimizacion/` | `src/data/courses/optimizacion.json` |
 | Planificación de Proyectos | planificacion-proyectos | COC2008 | `public/files/courses/planificacion-proyectos/` | `src/data/courses/planificacion-proyectos.json` |
-| Probabilidades y Estadísticas | probabilidades-estadisticas-industrial | CBE2000 | `public/files/courses/probabilidades-estadisticas-industrial/` | `src/data/courses/probabilidades-estadisticas-industrial.json` |
-| Probabilidades y Estadísticas | probabilidades-estadisticas-informatica | CIT2204 | `public/files/courses/probabilidades-estadisticas-informatica/` | `src/data/courses/probabilidades-estadisticas-informatica.json` |
-| Probabilidades y Estadísticas | probabilidades-estadisticas-obras-civiles | CBE2000 | `public/files/courses/probabilidades-estadisticas-obras-civiles/` | `src/data/courses/probabilidades-estadisticas-obras-civiles.json` |
+| Probabilidades y Estadísticas (Industrial) | probabilidades-estadisticas-industrial | CBE2000 | `public/files/courses/probabilidades-estadisticas-industrial/` | `src/data/courses/probabilidades-estadisticas-industrial.json` |
+| Probabilidades y Estadísticas (Informática) | probabilidades-estadisticas-informatica | CIT2204 | `public/files/courses/probabilidades-estadisticas-informatica/` | `src/data/courses/probabilidades-estadisticas-informatica.json` |
+| Probabilidades y Estadísticas (Obras Civiles) | probabilidades-estadisticas-obras-civiles | CBE2000 | `public/files/courses/probabilidades-estadisticas-obras-civiles/` | `src/data/courses/probabilidades-estadisticas-obras-civiles.json` |
 | Producción | produccion | CII2253 | `public/files/courses/produccion/` | `src/data/courses/produccion.json` |
 | Programación (C++) | programacion-cpp | CIT1000 | `public/files/courses/programacion-cpp/` | `src/data/courses/programacion-cpp.json` |
 | Programación (Python) | programacion-python | CIT1100 | `public/files/courses/programacion-python/` | `src/data/courses/programacion-python.json` |
