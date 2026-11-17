@@ -490,7 +490,8 @@ function renderCoursePanel(course) {
             .forEach((material) => {
               const link = document.createElement("a");
               link.href = material.path;
-              link.download = "";
+              link.target = "_blank";
+              link.rel = "noopener";
               link.textContent = material.title;
               list.append(link);
             });
