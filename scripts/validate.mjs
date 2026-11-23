@@ -8,6 +8,7 @@ const catalogPath = path.join(dataPath, "catalog");
 const courseDataPath = path.join(dataPath, "courses");
 const publicCoursesPath = path.join(root, "public", "files", "courses");
 const errors = [];
+const ignoredEntries = new Set([".DS_Store"]);  //  Archivos a ignorar en validación (ignorados por .gitignore)
 const idPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const periodPattern = /^\d{4}-(1|2|verano)$/;
 const codePattern = /^[A-Z0-9]+(?:-[A-Z0-9]+)*$/;
@@ -67,6 +68,9 @@ function walkFiles(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   const output = [];
   entries.forEach((entry) => {
+    if (ignoredEntries.has(entry.name)) {
+      return;
+    }
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       output.push(...walkFiles(fullPath));
