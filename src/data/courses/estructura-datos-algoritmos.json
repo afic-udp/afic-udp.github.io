@@ -15,6 +15,36 @@
   },
   "materials": [
     {
+      "id": "prueba-2-2024-2",
+      "title": "Solemne 2",
+      "period": "2024-2",
+      "type": "prueba",
+      "kind": "enunciado",
+      "sequence": 2,
+      "version": 1,
+      "path": "/files/courses/estructura-datos-algoritmos/2024-2/pruebas/CIT2006_2024_2_estructura-datos-algoritmos_prueba_2.pdf"
+    },
+    {
+      "id": "examen-2024-2",
+      "title": "Examen",
+      "period": "2024-2",
+      "type": "examen",
+      "kind": "enunciado",
+      "sequence": 1,
+      "version": 1,
+      "path": "/files/courses/estructura-datos-algoritmos/2024-2/examenes/CIT2006_2024_2_estructura-datos-algoritmos_examen_1.pdf"
+    },
+    {
+      "id": "prueba-2-2025-2",
+      "title": "Solemne 2",
+      "period": "2025-2",
+      "type": "prueba",
+      "kind": "enunciado",
+      "sequence": 2,
+      "version": 1,
+      "path": "/files/courses/estructura-datos-algoritmos/2025-2/pruebas/CIT2006_2025_2_estructura-datos-algoritmos_prueba_2.pdf"
+    },
+    {
       "id": "guia-1-2026-2",
       "title": "Guía 1",
       "period": "2026-2",
@@ -23,6 +53,16 @@
       "sequence": 1,
       "version": 1,
       "path": "/files/courses/estructura-datos-algoritmos/2026-2/guias/CIT2006_2026_2_estructura-datos-algoritmos_guia_1.pdf"
+    },
+    {
+      "id": "guia-2-2026-2",
+      "title": "Guía 2",
+      "period": "2026-2",
+      "type": "guia",
+      "kind": "enunciado",
+      "sequence": 2,
+      "version": 1,
+      "path": "/files/courses/estructura-datos-algoritmos/2026-2/guias/CIT2006_2026_2_estructura-datos-algoritmos_guia_2.pdf"
     }
   ]
 }
